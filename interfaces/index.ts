@@ -21,17 +21,14 @@ export type Tags = {
   id: string
   name: string
 }
-export type OrderItem = {
-  id: string
-  product: Product
-  quantity: number
-}
 
-export type OrderSummary = {
+export type Order = {
   id: string
-  user: User
-  orderItems: OrderItem[]
-  shipped: boolean
+  client: User
+  products: Product[]
+  total: number
+  status: string
+  date: string
 }
 
 export type User = {
@@ -39,6 +36,6 @@ export type User = {
   name: string
   email: string
   password: string
-  orders: OrderSummary[]
+  orders: []
 }
  

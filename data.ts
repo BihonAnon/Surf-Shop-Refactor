@@ -323,42 +323,25 @@ export const userData = [
     name: 'John Doe',
     email: 'JohnDoe@gmail.com',
     password: 'password',
-    orders: [
+  }
+]
+export const orders = [
+  {
+    id: '1',
+    userId: '1',
+    orderList: [  // array of product ids
       {
         id: '1',
-        user: '1',
-        orderItems: [
-          {
-            id: '1',
-            product: products[0],
-            quantity: 1,
-          },
-          {
-            id: '1',
-            product: products[1],
-            quantity: 2,
-          }
-        ],
-        shipped: false,
+        quantity: 1,
       },
       {
         id: '2',
-        user: '1',
-        orderItems: [
-          {
-            id: '2',
-            product: products[0],
-            quantity: 1,
-          },
-          {
-            id: '2',
-            product: products[1],
-            quantity: 1,
-          }
-        ],
-        shipped: false,
+        quantity: 1,
       }
-    ]
+    ],
+    orderTotal: 600,
+    orderDate: '2020-01-01',
   }
 ]
+
 

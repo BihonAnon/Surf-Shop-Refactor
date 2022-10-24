@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 //login props
 type LoginProps = {
     user: any;
